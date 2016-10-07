@@ -86,7 +86,7 @@ define :php_application, enable: true do
   web_app application_name do
     template 'apache_vhost.conf.erb'
     # Use this cookbook to localize template
-    cookbook 'lamp_role'
+    cookbook 'heatlamp'
     # any param given here is forwarded to the template under params hash
     server_name application_name
     server_aliases options[:aliases] if options[:aliases] && options[:aliases].any?

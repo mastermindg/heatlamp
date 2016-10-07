@@ -1,4 +1,4 @@
-RSpec.describe 'lamp_role::apache2' do
+RSpec.describe 'heatlamp::apache2' do
 
   let(:chef_run) do
     ChefSpec::Runner.new(log_level: :fatal) do |node|

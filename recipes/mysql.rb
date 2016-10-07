@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: heatlamp
-# Recipe:: default
+# Recipe:: mysql
 #
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
