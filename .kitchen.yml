@@ -1,8 +1,7 @@
 ---
 driver:
   name: vagrant
-#driver_config:
-#  require_chef_omnibus: 11.16.2
+  boot_timeout: 1200
 
 provisioner:
   name: chef_solo
@@ -15,9 +14,9 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[lamp_role::default]
+      - recipe[heatlamp::default]
       # Integration tests for php applications
-      - recipe[lamp_role::_integration]
+      - recipe[heatlamp::_integration]
     attributes:
       apt:
         # Force apt to update package cache at compile time
